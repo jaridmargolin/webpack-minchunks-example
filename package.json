@@ -1,0 +1,13 @@
+{
+  "name": "webpack-minchunks-example",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "build-expected": "webpack --config ./webpack.config-expected.js",
+    "build-unexpected": "webpack --config ./webpack.config-unexpected.js",
+    "build": "npm run build-expected && npm run build-unexpected"
+  },
+  "dependencies": {
+    "webpack": "^2.3.2"
+  }
+}
